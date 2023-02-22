@@ -1,6 +1,6 @@
 # manual steps for creating a TFE external with a custom agent
 
-With the release of Terraform Enterprise Februari 2023 (v202302-1 (681)) the custom worker is changed and you must use the new agent based image
+With the release of Terraform Enterprise Februari 2023 (v202302-1 (681)) the custom worker is changed and you must switch to the new agent based image before the release of may 2023
 
 See here for the details https://developer.hashicorp.com/terraform/enterprise/admin/infrastructure/worker-to-agent-migration
 
@@ -56,7 +56,6 @@ resource "null_resource" "test" {
     command = "az --version"
   }
 }
-
 ```
 
 ![](media/20230222123055.png)    
