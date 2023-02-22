@@ -48,4 +48,15 @@ replicatedctl app start
 - See the new settings in the dashboard  
 ![](media/image.png.png)  
 
+- When doing a run with the following code you should see this output
 
+```
+resource "null_resource" "test" {
+  provisioner "local-exec" {
+    command = "az --version"
+  }
+}
+
+```
+
+![](media/20230222123055.png)    
