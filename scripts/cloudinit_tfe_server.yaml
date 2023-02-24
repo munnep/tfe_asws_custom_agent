@@ -267,7 +267,7 @@ write_files:
 
        # Create a cli-driven workspace named test-custom-worker
        curl \
-       --header "Authorization: Bearer \$TOKEN" \
+       --header "Authorization: Bearer $TOKEN" \
        --header "Content-Type: application/vnd.api+json" \
        --request POST \
        --data @/etc/tfe_create_workspace.json \
